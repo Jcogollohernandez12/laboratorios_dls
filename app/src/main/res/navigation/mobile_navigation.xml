@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_client">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.unicor.view.ui.cliente.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_client"
+        android:name="com.example.unicor.view.ui.cliente.ClientFragment"
+        android:label="@string/menu_cliente"
+        tools:layout="@layout/fragment_cliente" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.unicor.view.ui.citas.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_citas_consultar"
+        android:name="com.example.unicor.view.ui.cliente.ClientFragment"
+        android:label="@string/menu_consultar_cita"
+        tools:layout="@layout/fragment_consultar_cita" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.unicor.view.ui.procesos.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_citas_agendar"
+        android:name="com.example.unicor.view.ui.citas.agendar.AgendarCitaFragment"
+        android:label="@string/menu_agendar_cita"
+        tools:layout="@layout/fragment_agendar_cita" />
+
+    <fragment
+        android:id="@+id/nav_procesos"
+        android:name="com.example.unicor.view.ui.procesos.consultar.ProcesoCosultarFragment"
+        android:label="@string/menu_consultar_proceso"
+        tools:layout="@layout/fragment_consultar_proceso" />
 </navigation>

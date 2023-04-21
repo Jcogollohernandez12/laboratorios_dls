@@ -1,16 +1,16 @@
-package com.example.unicor.view.ui.citas;
+package com.example.unicor.view.ui.procesos.consultar;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class ProcesoConsultarViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public ProcesoConsultarViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is slideshow fragment");
     }
 
     public LiveData<String> getText() {

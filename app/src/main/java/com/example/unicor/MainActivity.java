@@ -95,12 +95,6 @@ public void alerta(String title, String contet){
     AlertDialog.Builder builder = new AlertDialog.Builder(this);
     builder.setTitle(title);
     builder.setMessage(contet);
-  //builder.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
-  //    @Override
-  //    public void onClick(DialogInterface dialog, int which) {
-  //        // Acción a realizar cuando se presione el botón de aceptar
-  //    }
-  //});
     builder.show();
 }
 

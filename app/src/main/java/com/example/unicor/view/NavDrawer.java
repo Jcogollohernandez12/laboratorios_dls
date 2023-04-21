@@ -32,8 +32,8 @@ public class NavDrawer extends AppCompatActivity {
         binding.appBarNavDrawer.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+               Snackbar.make(view, "Sin mensajes", Snackbar.LENGTH_LONG)
+                       .setAction("Action", null).show();
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
@@ -41,7 +41,7 @@ public class NavDrawer extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_client,R.id.nav_citas_consultar, R.id.nav_citas_agendar, R.id.nav_procesos)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_nav_drawer);

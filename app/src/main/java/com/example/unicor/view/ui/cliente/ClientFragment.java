@@ -10,23 +10,23 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.unicor.databinding.FragmentHomeBinding;
-//import com.example.unicor.view.databinding.FragmentHomeBinding;
+import com.example.unicor.databinding.FragmentClienteBinding;
 
-public class HomeFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+public class ClientFragment extends Fragment {
+
+    private FragmentClienteBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        ClientViewModel clientViewModel =
+                new ViewModelProvider(this).get(ClientViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentClienteBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        clientViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
